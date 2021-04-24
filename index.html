@@ -1,0 +1,61 @@
+<!-- CODE EXPLAINED CHANNEL -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+       <div class="header">
+           <img id="image" height="200" width="420" style="border-radius:10px 10px 0 0;">
+           <div class="clear">
+               <i class="fa fa-refresh"></i>
+           </div>
+           <div id="date"></div>
+       </div>
+       <div class="content">
+           <ul id="list">
+              <!-- <li class="item"> -->
+<!--                  <i class="fa fa-circle-thin co" id="0" job="complete"></i>-->
+<!--                  <p class="text lineThrough">Drink Coffee</p>-->
+<!--                  <i class="fa fa-trash-o de" job="delete" id="1"></i>-->
+              <!-- </li> -->
+           </ul>
+       </div>
+       <div class="add-to-do">
+           <i class="fa fa-plus-circle"></i>
+           <input type="text" id="input" placeholder="Add to do">
+       </div>
+   </div>
+
+   <script src="js/app.js"></script>
+   <script>
+              var images = [
+    "img/anders-jilden-nrLtvA05jk8-unsplash.jpg",
+    "img/thomas-kelley-iPt41beW5rs-unsplash.jpg",
+    "img/rishabh-malhotra-rJ3jGbijjYc-unsplash.jpg",
+    "img/photo-of-snow-capped-mountain-during-evening-2440024.jpg",
+"img/juliana-malta-xYu-SKOQ0Dc-unsplash.jpg",
+"img/gaspar-manuel-zaldo-Pd9V-_UfzGQ-unsplash.jpg"];
+
+function randImg() {
+    var size = images.length
+    var x = Math.floor(size * Math.random())
+    document.getElementById('image').src = images[x];
+}
+
+randImg();
+   </script>
+</body>
+</html>
